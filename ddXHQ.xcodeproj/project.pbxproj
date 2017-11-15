@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7BBF1F71FB5A12B00DA3D0E /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF1F61FB5A12B00DA3D0E /* MethodTraceConfig.plist */; };
+		B7BBF1FA1FB5A12B00DA3D0E /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF1F91FB5A12B00DA3D0E /* put ipa or app here */; };
+		B7BBF2041FB5A12B00DA3D0E /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2031FB5A12B00DA3D0E /* Cycript.framework */; };
+		B7BBF2061FB5A12B00DA3D0E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2051FB5A12B00DA3D0E /* JavaScriptCore.framework */; };
+		B7BBF2081FB5A12B00DA3D0E /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2071FB5A12B00DA3D0E /* RevealServer.framework */; };
+		B7BBF20A1FB5A12B00DA3D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2091FB5A12B00DA3D0E /* Foundation.framework */; };
+		B7BBF20C1FB5A12B00DA3D0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF20B1FB5A12B00DA3D0E /* UIKit.framework */; };
+		B7BBF2101FB5A12B00DA3D0E /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BBF20F1FB5A12B00DA3D0E /* ANYMethodLog.h */; };
+		B7BBF2121FB5A12B00DA3D0E /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF2111FB5A12B00DA3D0E /* ANYMethodLog.m */; };
+		B7BBF2141FB5A12B00DA3D0E /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BBF2131FB5A12B00DA3D0E /* MethodTrace.h */; };
+		B7BBF2161FB5A12B00DA3D0E /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF2151FB5A12B00DA3D0E /* MethodTrace.m */; };
+		B7BBF21B1FB5A12B00DA3D0E /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF21A1FB5A12B00DA3D0E /* AntiAntiDebug.m */; };
+		B7BBF21E1FB5A12B00DA3D0E /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF21D1FB5A12B00DA3D0E /* fishhook.c */; };
+		B7BBF2201FB5A12B00DA3D0E /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BBF21F1FB5A12B00DA3D0E /* fishhook.h */; };
+		B7BBF2231FB5A12B00DA3D0E /* ddXHQDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF2221FB5A12B00DA3D0E /* ddXHQDylib.mm */; };
+		B7BBF2251FB5A12B00DA3D0E /* ddXHQDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BBF2241FB5A12B00DA3D0E /* ddXHQDylib.h */; };
+		B7BBF2271FB5A12B00DA3D0E /* ddXHQDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF2261FB5A12B00DA3D0E /* ddXHQDylib.m */; };
+		B7E6AF011FB8C08D00A8ADFB /* WBWifiListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEED1FB8C08D00A8ADFB /* WBWifiListViewController.h */; };
+		B7E6AF021FB8C08D00A8ADFB /* WBWifiListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEEE1FB8C08D00A8ADFB /* WBWifiListViewController.m */; };
+		B7E6AF031FB8C08D00A8ADFB /* WBWifiModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEEF1FB8C08D00A8ADFB /* WBWifiModel.h */; };
+		B7E6AF041FB8C08D00A8ADFB /* WBWifiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEF01FB8C08D00A8ADFB /* WBWifiModel.m */; };
+		B7E6AF051FB8C08D00A8ADFB /* WBWifiStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEF11FB8C08D00A8ADFB /* WBWifiStore.h */; };
+		B7E6AF061FB8C08D00A8ADFB /* WBWifiStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEF21FB8C08D00A8ADFB /* WBWifiStore.m */; };
+		B7E6AF071FB8C08D00A8ADFB /* WBAssistantManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEF41FB8C08D00A8ADFB /* WBAssistantManager.h */; };
+		B7E6AF081FB8C08D00A8ADFB /* WBAssistantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEF51FB8C08D00A8ADFB /* WBAssistantManager.m */; };
+		B7E6AF091FB8C08D00A8ADFB /* WBGlobalSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEF61FB8C08D00A8ADFB /* WBGlobalSettingViewController.h */; };
+		B7E6AF0A1FB8C08D00A8ADFB /* WBGlobalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEF71FB8C08D00A8ADFB /* WBGlobalSettingViewController.m */; };
+		B7E6AF0B1FB8C08D00A8ADFB /* WBMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEF81FB8C08D00A8ADFB /* WBMenuView.h */; };
+		B7E6AF0C1FB8C08D00A8ADFB /* WBMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEF91FB8C08D00A8ADFB /* WBMenuView.m */; };
+		B7E6AF0D1FB8C08D00A8ADFB /* WBMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEFA1FB8C08D00A8ADFB /* WBMenuViewController.h */; };
+		B7E6AF0E1FB8C08D00A8ADFB /* WBMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEFB1FB8C08D00A8ADFB /* WBMenuViewController.m */; };
+		B7E6AF0F1FB8C08D00A8ADFB /* WBWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEFC1FB8C08D00A8ADFB /* WBWindow.h */; };
+		B7E6AF101FB8C08D00A8ADFB /* WBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEFD1FB8C08D00A8ADFB /* WBWindow.m */; };
+		B7E6AF111FB8C08D00A8ADFB /* WBGPSPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEFF1FB8C08D00A8ADFB /* WBGPSPickerViewController.h */; };
+		B7E6AF121FB8C08D00A8ADFB /* WBGPSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AF001FB8C08D00A8ADFB /* WBGPSPickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7BBF2341FB5A16900DA3D0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7BBF1E81FB5A12B00DA3D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7BBF2001FB5A12B00DA3D0E;
+			remoteInfo = ddXHQDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7BBF1F01FB5A12B00DA3D0E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B7BBF1F31FB5A12B00DA3D0E /* ddXHQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddXHQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BBF1F61FB5A12B00DA3D0E /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		B7BBF1F91FB5A12B00DA3D0E /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		B7BBF1FB1FB5A12B00DA3D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7BBF2011FB5A12B00DA3D0E /* libddXHQDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libddXHQDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BBF2031FB5A12B00DA3D0E /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		B7BBF2051FB5A12B00DA3D0E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B7BBF2071FB5A12B00DA3D0E /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		B7BBF2091FB5A12B00DA3D0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B7BBF20B1FB5A12B00DA3D0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B7BBF20F1FB5A12B00DA3D0E /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		B7BBF2111FB5A12B00DA3D0E /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		B7BBF2131FB5A12B00DA3D0E /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		B7BBF2151FB5A12B00DA3D0E /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		B7BBF2181FB5A12B00DA3D0E /* ddXHQDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ddXHQDylib-Prefix.pch"; sourceTree = "<group>"; };
+		B7BBF21A1FB5A12B00DA3D0E /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		B7BBF21D1FB5A12B00DA3D0E /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		B7BBF21F1FB5A12B00DA3D0E /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		B7BBF2211FB5A12B00DA3D0E /* ddXHQDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ddXHQDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B7BBF2221FB5A12B00DA3D0E /* ddXHQDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ddXHQDylib.mm; sourceTree = "<group>"; };
+		B7BBF2241FB5A12B00DA3D0E /* ddXHQDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddXHQDylib.h; sourceTree = "<group>"; };
+		B7BBF2261FB5A12B00DA3D0E /* ddXHQDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ddXHQDylib.m; sourceTree = "<group>"; };
+		B7E6AEED1FB8C08D00A8ADFB /* WBWifiListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWifiListViewController.h; sourceTree = "<group>"; };
+		B7E6AEEE1FB8C08D00A8ADFB /* WBWifiListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWifiListViewController.m; sourceTree = "<group>"; };
+		B7E6AEEF1FB8C08D00A8ADFB /* WBWifiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWifiModel.h; sourceTree = "<group>"; };
+		B7E6AEF01FB8C08D00A8ADFB /* WBWifiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWifiModel.m; sourceTree = "<group>"; };
+		B7E6AEF11FB8C08D00A8ADFB /* WBWifiStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWifiStore.h; sourceTree = "<group>"; };
+		B7E6AEF21FB8C08D00A8ADFB /* WBWifiStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWifiStore.m; sourceTree = "<group>"; };
+		B7E6AEF41FB8C08D00A8ADFB /* WBAssistantManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAssistantManager.h; sourceTree = "<group>"; };
+		B7E6AEF51FB8C08D00A8ADFB /* WBAssistantManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAssistantManager.m; sourceTree = "<group>"; };
+		B7E6AEF61FB8C08D00A8ADFB /* WBGlobalSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGlobalSettingViewController.h; sourceTree = "<group>"; };
+		B7E6AEF71FB8C08D00A8ADFB /* WBGlobalSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGlobalSettingViewController.m; sourceTree = "<group>"; };
+		B7E6AEF81FB8C08D00A8ADFB /* WBMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMenuView.h; sourceTree = "<group>"; };
+		B7E6AEF91FB8C08D00A8ADFB /* WBMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMenuView.m; sourceTree = "<group>"; };
+		B7E6AEFA1FB8C08D00A8ADFB /* WBMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMenuViewController.h; sourceTree = "<group>"; };
+		B7E6AEFB1FB8C08D00A8ADFB /* WBMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMenuViewController.m; sourceTree = "<group>"; };
+		B7E6AEFC1FB8C08D00A8ADFB /* WBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWindow.h; sourceTree = "<group>"; };
+		B7E6AEFD1FB8C08D00A8ADFB /* WBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWindow.m; sourceTree = "<group>"; };
+		B7E6AEFF1FB8C08D00A8ADFB /* WBGPSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGPSPickerViewController.h; sourceTree = "<group>"; };
+		B7E6AF001FB8C08D00A8ADFB /* WBGPSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGPSPickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7BBF1ED1FB5A12B00DA3D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7BBF1FE1FB5A12B00DA3D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BBF2061FB5A12B00DA3D0E /* JavaScriptCore.framework in Frameworks */,
+				B7BBF2081FB5A12B00DA3D0E /* RevealServer.framework in Frameworks */,
+				B7BBF2041FB5A12B00DA3D0E /* Cycript.framework in Frameworks */,
+				B7BBF20A1FB5A12B00DA3D0E /* Foundation.framework in Frameworks */,
+				B7BBF20C1FB5A12B00DA3D0E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7BBF1E71FB5A12B00DA3D0E = {
+			isa = PBXGroup;
+			children = (
+				B7BBF1F51FB5A12B00DA3D0E /* ddXHQ */,
+				B7BBF20D1FB5A12B00DA3D0E /* ddXHQDylib */,
+				B7BBF2021FB5A12B00DA3D0E /* Frameworks */,
+				B7BBF1F41FB5A12B00DA3D0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7BBF1F41FB5A12B00DA3D0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF1F31FB5A12B00DA3D0E /* ddXHQ.app */,
+				B7BBF2011FB5A12B00DA3D0E /* libddXHQDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7BBF1F51FB5A12B00DA3D0E /* ddXHQ */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF1F61FB5A12B00DA3D0E /* MethodTraceConfig.plist */,
+				B7BBF1FB1FB5A12B00DA3D0E /* Info.plist */,
+				B7BBF1F81FB5A12B00DA3D0E /* TargetApp */,
+			);
+			path = ddXHQ;
+			sourceTree = "<group>";
+		};
+		B7BBF1F81FB5A12B00DA3D0E /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF1F91FB5A12B00DA3D0E /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		B7BBF2021FB5A12B00DA3D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF2031FB5A12B00DA3D0E /* Cycript.framework */,
+				B7BBF2051FB5A12B00DA3D0E /* JavaScriptCore.framework */,
+				B7BBF2071FB5A12B00DA3D0E /* RevealServer.framework */,
+				B7BBF2091FB5A12B00DA3D0E /* Foundation.framework */,
+				B7BBF20B1FB5A12B00DA3D0E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7BBF20D1FB5A12B00DA3D0E /* ddXHQDylib */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF2211FB5A12B00DA3D0E /* ddXHQDylib.xm */,
+				B7BBF2221FB5A12B00DA3D0E /* ddXHQDylib.mm */,
+				B7BBF2241FB5A12B00DA3D0E /* ddXHQDylib.h */,
+				B7BBF2261FB5A12B00DA3D0E /* ddXHQDylib.m */,
+				B7BBF20E1FB5A12B00DA3D0E /* MethodTrace */,
+				B7BBF2191FB5A12B00DA3D0E /* AntiAntiDebug */,
+				B7BBF21C1FB5A12B00DA3D0E /* fishhook */,
+				B7BBF2171FB5A12B00DA3D0E /* Supporting Files */,
+			);
+			path = ddXHQDylib;
+			sourceTree = "<group>";
+		};
+		B7BBF20E1FB5A12B00DA3D0E /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF20F1FB5A12B00DA3D0E /* ANYMethodLog.h */,
+				B7BBF2111FB5A12B00DA3D0E /* ANYMethodLog.m */,
+				B7BBF2131FB5A12B00DA3D0E /* MethodTrace.h */,
+				B7BBF2151FB5A12B00DA3D0E /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		B7BBF2171FB5A12B00DA3D0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7E6AEFE1FB8C08D00A8ADFB /* GPS */,
+				B7E6AEF31FB8C08D00A8ADFB /* MenuWindow */,
+				B7E6AEEC1FB8C08D00A8ADFB /* WIFI */,
+				B7BBF2181FB5A12B00DA3D0E /* ddXHQDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7BBF2191FB5A12B00DA3D0E /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF21A1FB5A12B00DA3D0E /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		B7BBF21C1FB5A12B00DA3D0E /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF21D1FB5A12B00DA3D0E /* fishhook.c */,
+				B7BBF21F1FB5A12B00DA3D0E /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		B7E6AEEC1FB8C08D00A8ADFB /* WIFI */ = {
+			isa = PBXGroup;
+			children = (
+				B7E6AEED1FB8C08D00A8ADFB /* WBWifiListViewController.h */,
+				B7E6AEEE1FB8C08D00A8ADFB /* WBWifiListViewController.m */,
+				B7E6AEEF1FB8C08D00A8ADFB /* WBWifiModel.h */,
+				B7E6AEF01FB8C08D00A8ADFB /* WBWifiModel.m */,
+				B7E6AEF11FB8C08D00A8ADFB /* WBWifiStore.h */,
+				B7E6AEF21FB8C08D00A8ADFB /* WBWifiStore.m */,
+			);
+			path = WIFI;
+			sourceTree = "<group>";
+		};
+		B7E6AEF31FB8C08D00A8ADFB /* MenuWindow */ = {
+			isa = PBXGroup;
+			children = (
+				B7E6AEF41FB8C08D00A8ADFB /* WBAssistantManager.h */,
+				B7E6AEF51FB8C08D00A8ADFB /* WBAssistantManager.m */,
+				B7E6AEF61FB8C08D00A8ADFB /* WBGlobalSettingViewController.h */,
+				B7E6AEF71FB8C08D00A8ADFB /* WBGlobalSettingViewController.m */,
+				B7E6AEF81FB8C08D00A8ADFB /* WBMenuView.h */,
+				B7E6AEF91FB8C08D00A8ADFB /* WBMenuView.m */,
+				B7E6AEFA1FB8C08D00A8ADFB /* WBMenuViewController.h */,
+				B7E6AEFB1FB8C08D00A8ADFB /* WBMenuViewController.m */,
+				B7E6AEFC1FB8C08D00A8ADFB /* WBWindow.h */,
+				B7E6AEFD1FB8C08D00A8ADFB /* WBWindow.m */,
+			);
+			path = MenuWindow;
+			sourceTree = "<group>";
+		};
+		B7E6AEFE1FB8C08D00A8ADFB /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				B7E6AEFF1FB8C08D00A8ADFB /* WBGPSPickerViewController.h */,
+				B7E6AF001FB8C08D00A8ADFB /* WBGPSPickerViewController.m */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B7BBF1FF1FB5A12B00DA3D0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E6AF071FB8C08D00A8ADFB /* WBAssistantManager.h in Headers */,
+				B7E6AF0B1FB8C08D00A8ADFB /* WBMenuView.h in Headers */,
+				B7E6AF051FB8C08D00A8ADFB /* WBWifiStore.h in Headers */,
+				B7E6AF011FB8C08D00A8ADFB /* WBWifiListViewController.h in Headers */,
+				B7BBF2101FB5A12B00DA3D0E /* ANYMethodLog.h in Headers */,
+				B7E6AF091FB8C08D00A8ADFB /* WBGlobalSettingViewController.h in Headers */,
+				B7BBF2141FB5A12B00DA3D0E /* MethodTrace.h in Headers */,
+				B7BBF2201FB5A12B00DA3D0E /* fishhook.h in Headers */,
+				B7E6AF031FB8C08D00A8ADFB /* WBWifiModel.h in Headers */,
+				B7E6AF0F1FB8C08D00A8ADFB /* WBWindow.h in Headers */,
+				B7E6AF0D1FB8C08D00A8ADFB /* WBMenuViewController.h in Headers */,
+				B7E6AF111FB8C08D00A8ADFB /* WBGPSPickerViewController.h in Headers */,
+				B7BBF2251FB5A12B00DA3D0E /* ddXHQDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B7BBF1F21FB5A12B00DA3D0E /* ddXHQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7BBF22A1FB5A12B00DA3D0E /* Build configuration list for PBXNativeTarget "ddXHQ" */;
+			buildPhases = (
+				B7BBF1EC1FB5A12B00DA3D0E /* Sources */,
+				B7BBF1ED1FB5A12B00DA3D0E /* Frameworks */,
+				B7BBF1EE1FB5A12B00DA3D0E /* ShellScript */,
+				B7BBF1EF1FB5A12B00DA3D0E /* Resources */,
+				B7BBF1F01FB5A12B00DA3D0E /* CopyFiles */,
+				B7BBF1F11FB5A12B00DA3D0E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7BBF2351FB5A16900DA3D0E /* PBXTargetDependency */,
+			);
+			name = ddXHQ;
+			productName = ddXHQ;
+			productReference = B7BBF1F31FB5A12B00DA3D0E /* ddXHQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7BBF2001FB5A12B00DA3D0E /* ddXHQDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7BBF22D1FB5A12B00DA3D0E /* Build configuration list for PBXNativeTarget "ddXHQDylib" */;
+			buildPhases = (
+				B7BBF1FC1FB5A12B00DA3D0E /* ShellScript */,
+				B7BBF1FD1FB5A12B00DA3D0E /* Sources */,
+				B7BBF1FE1FB5A12B00DA3D0E /* Frameworks */,
+				B7BBF1FF1FB5A12B00DA3D0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ddXHQDylib;
+			productName = ddXHQDylib;
+			productReference = B7BBF2011FB5A12B00DA3D0E /* libddXHQDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7BBF1E81FB5A12B00DA3D0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = xhq;
+				TargetAttributes = {
+					B7BBF1F21FB5A12B00DA3D0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SVJ9FQTG9N;
+						ProvisioningStyle = Manual;
+					};
+					B7BBF2001FB5A12B00DA3D0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SVJ9FQTG9N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B7BBF1EB1FB5A12B00DA3D0E /* Build configuration list for PBXProject "ddXHQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7BBF1E71FB5A12B00DA3D0E;
+			productRefGroup = B7BBF1F41FB5A12B00DA3D0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7BBF1F21FB5A12B00DA3D0E /* ddXHQ */,
+				B7BBF2001FB5A12B00DA3D0E /* ddXHQDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7BBF1EF1FB5A12B00DA3D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BBF1FA1FB5A12B00DA3D0E /* put ipa or app here in Resources */,
+				B7BBF1F71FB5A12B00DA3D0E /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7BBF1EE1FB5A12B00DA3D0E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		B7BBF1F11FB5A12B00DA3D0E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		B7BBF1FC1FB5A12B00DA3D0E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7BBF1EC1FB5A12B00DA3D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7BBF1FD1FB5A12B00DA3D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E6AF0E1FB8C08D00A8ADFB /* WBMenuViewController.m in Sources */,
+				B7BBF2231FB5A12B00DA3D0E /* ddXHQDylib.mm in Sources */,
+				B7E6AF041FB8C08D00A8ADFB /* WBWifiModel.m in Sources */,
+				B7BBF21B1FB5A12B00DA3D0E /* AntiAntiDebug.m in Sources */,
+				B7E6AF081FB8C08D00A8ADFB /* WBAssistantManager.m in Sources */,
+				B7BBF2271FB5A12B00DA3D0E /* ddXHQDylib.m in Sources */,
+				B7E6AF021FB8C08D00A8ADFB /* WBWifiListViewController.m in Sources */,
+				B7BBF2161FB5A12B00DA3D0E /* MethodTrace.m in Sources */,
+				B7E6AF121FB8C08D00A8ADFB /* WBGPSPickerViewController.m in Sources */,
+				B7E6AF0A1FB8C08D00A8ADFB /* WBGlobalSettingViewController.m in Sources */,
+				B7E6AF0C1FB8C08D00A8ADFB /* WBMenuView.m in Sources */,
+				B7BBF21E1FB5A12B00DA3D0E /* fishhook.c in Sources */,
+				B7E6AF061FB8C08D00A8ADFB /* WBWifiStore.m in Sources */,
+				B7E6AF101FB8C08D00A8ADFB /* WBWindow.m in Sources */,
+				B7BBF2121FB5A12B00DA3D0E /* ANYMethodLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7BBF2351FB5A16900DA3D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7BBF2001FB5A12B00DA3D0E /* ddXHQDylib */;
+			targetProxy = B7BBF2341FB5A16900DA3D0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B7BBF2281FB5A12B00DA3D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7BBF2291FB5A12B00DA3D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7BBF22B1FB5A12B00DA3D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SVJ9FQTG9N;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ddXHQ/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36bbe5b6-b886-4be8-a15c-060fdf65cf5a";
+				PROVISIONING_PROFILE_SPECIFIER = 20170811_2_TP;
+			};
+			name = Debug;
+		};
+		B7BBF22C1FB5A12B00DA3D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SVJ9FQTG9N;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ddXHQ/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36bbe5b6-b886-4be8-a15c-060fdf65cf5a";
+				PROVISIONING_PROFILE_SPECIFIER = 20170811_2_TP;
+			};
+			name = Release;
+		};
+		B7BBF22E1FB5A12B00DA3D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SVJ9FQTG9N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ddXHQDylib/ddXHQDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libddXHQDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ddXHQDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		B7BBF22F1FB5A12B00DA3D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = SVJ9FQTG9N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ddXHQDylib/ddXHQDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libddXHQDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ddXHQDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7BBF1EB1FB5A12B00DA3D0E /* Build configuration list for PBXProject "ddXHQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BBF2281FB5A12B00DA3D0E /* Debug */,
+				B7BBF2291FB5A12B00DA3D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7BBF22A1FB5A12B00DA3D0E /* Build configuration list for PBXNativeTarget "ddXHQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BBF22B1FB5A12B00DA3D0E /* Debug */,
+				B7BBF22C1FB5A12B00DA3D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7BBF22D1FB5A12B00DA3D0E /* Build configuration list for PBXNativeTarget "ddXHQDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BBF22E1FB5A12B00DA3D0E /* Debug */,
+				B7BBF22F1FB5A12B00DA3D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7BBF1E81FB5A12B00DA3D0E /* Project object */;
+}
