@@ -2,6 +2,6 @@
  钉钉打卡
  功能:锁定wifi,实现wifi判断打卡     
 
- 源码来自:https://github.com/buginux/DingTalkAssistant,我把他整合进monkeyDev环境, 可以在非越狱手机上安装     
- 需要安装monkeyDev环境 https://github.com/AloneMonkey/MonkeyDev     
+ 源码来自:https://github.com/buginux/DingTalkAssistant ,  我把他整合进monkeyDev环境, 可以在非越狱手机上安装 
+ 需要安装monkeyDev环境 https://github.com/AloneMonkey/MonkeyDev  
  需要把钉钉ipa包放在TargetApp文件夹里    
