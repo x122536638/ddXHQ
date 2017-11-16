@@ -10,6 +10,7 @@
 #import "WBWifiModel.h"
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <netdb.h>
+#import "ddXHQDylib.h"
 
 static NSString * const kWifiHookedKey = @"WifiHookedKey";
 static NSString * const kHistoryWifiKey = @"HistoryWifiKey";
@@ -43,7 +44,7 @@ static NSString * const kHistoryWifiKey = @"HistoryWifiKey";
     if ([interfaces count] > 0) {
         NSString *interfaceName = [interfaces firstObject];
         
-        CFDictionaryRef info = CNCopyCurrentNetworkInfo((__bridge CFStringRef)interfaceName);
+        CFDictionaryRef info = newCNCopySupportedInterfaces((__bridge CFStringRef)interfaceName);
         NSDictionary *dictionary = (__bridge NSDictionary *)(info);
         
         if (dictionary) {

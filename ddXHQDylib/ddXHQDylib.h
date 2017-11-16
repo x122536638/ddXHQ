@@ -11,4 +11,4 @@
 #import <Foundation/Foundation.h>
 
 
-
+CFArrayRef newCNCopySupportedInterfaces() ;
