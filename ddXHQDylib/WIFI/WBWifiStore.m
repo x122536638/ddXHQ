@@ -44,7 +44,7 @@ static NSString * const kHistoryWifiKey = @"HistoryWifiKey";
     if ([interfaces count] > 0) {
         NSString *interfaceName = [interfaces firstObject];
         
-        CFDictionaryRef info = newCNCopySupportedInterfaces((__bridge CFStringRef)interfaceName);
+        CFDictionaryRef info = oldCNCopyCurrentNetworkInfo((__bridge CFStringRef)interfaceName);
         NSDictionary *dictionary = (__bridge NSDictionary *)(info);
         
         if (dictionary) {

@@ -11,4 +11,6 @@
 #import <Foundation/Foundation.h>
 
 
-CFArrayRef newCNCopySupportedInterfaces() ;
+
+
+extern CFDictionaryRef (*oldCNCopyCurrentNetworkInfo)(CFStringRef interfaceName);

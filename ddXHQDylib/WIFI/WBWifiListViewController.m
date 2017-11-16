@@ -82,20 +82,23 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSInteger numberOfSection = 0;
-    
-    if ([self.store.currentWifiList count] > 0) {
-        numberOfSection += 1;
-    }
-    
-    if ([self.store.historyWifiList count] > 0) {
-        numberOfSection += 1;
-    }
-   
-    return numberOfSection;
+//    NSInteger numberOfSection = 0;
+//
+//    if ([self.store.currentWifiList count] > 0) {
+//        numberOfSection += 1;
+//    }
+//
+//    if ([self.store.historyWifiList count] > 0) {
+//        numberOfSection += 1;
+//    }
+//
+//    return numberOfSection;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    
     if (section == 0) {
         return [self.store.currentWifiList count];
     } else if (section == 1) {

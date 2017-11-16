@@ -21,6 +21,7 @@
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import "fishhook.h"
 CFArrayRef (*oldCNCopySupportedInterfaces)();
+//之前add 了,再次修改
 CFDictionaryRef (*oldCNCopyCurrentNetworkInfo)(CFStringRef interfaceName);
 Boolean (*oldSCNetworkReachabilityGetFlags)(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags *flags);
 
