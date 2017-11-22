@@ -26,8 +26,16 @@ DingtalkPluginConfig* pluginConfig = nil;
 {
     self = [super init];
     if (self) {
+        //xhqxhq 取值
         
-        _location = CLLocationCoordinate2DMake(0, 0);
+        NSNumber *numberLAT = [[NSUserDefaults standardUserDefaults]  objectForKey:@"lat_xhq"];
+        NSNumber *numberLON    = [[NSUserDefaults standardUserDefaults]  objectForKey:@"lon_xhq"];
+        if ([numberLAT doubleValue] || [numberLON doubleValue]) {
+            _location  = CLLocationCoordinate2DMake([numberLAT doubleValue], [numberLON doubleValue]);
+        }else{
+            _location = CLLocationCoordinate2DMake(0, 0);
+        }
+        
         
     }
     return self;
