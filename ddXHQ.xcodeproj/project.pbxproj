@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356567F9C6C48AD477B9CEB5 /* Pods_ddXHQDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9CEDBFA6859E1BD7F15851 /* Pods_ddXHQDylib.framework */; };
+		B764291B1FC5146600E3B5E8 /* DingtalkPluginConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B76429151FC5146500E3B5E8 /* DingtalkPluginConfig.h */; };
+		B764291C1FC5146600E3B5E8 /* DingtalkPluginConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B76429161FC5146600E3B5E8 /* DingtalkPluginConfig.m */; };
+		B764291D1FC5146600E3B5E8 /* MapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B76429171FC5146600E3B5E8 /* MapViewController.h */; };
+		B764291E1FC5146600E3B5E8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B76429181FC5146600E3B5E8 /* MapViewController.m */; };
+		B764291F1FC5146600E3B5E8 /* WBGPSPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B76429191FC5146600E3B5E8 /* WBGPSPickerViewController.h */; };
+		B76429201FC5146600E3B5E8 /* WBGPSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B764291A1FC5146600E3B5E8 /* WBGPSPickerViewController.m */; };
 		B7BBF1F71FB5A12B00DA3D0E /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF1F61FB5A12B00DA3D0E /* MethodTraceConfig.plist */; };
 		B7BBF1FA1FB5A12B00DA3D0E /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF1F91FB5A12B00DA3D0E /* put ipa or app here */; };
 		B7BBF2041FB5A12B00DA3D0E /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2031FB5A12B00DA3D0E /* Cycript.framework */; };
@@ -40,8 +47,6 @@
 		B7E6AF0E1FB8C08D00A8ADFB /* WBMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEFB1FB8C08D00A8ADFB /* WBMenuViewController.m */; };
 		B7E6AF0F1FB8C08D00A8ADFB /* WBWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEFC1FB8C08D00A8ADFB /* WBWindow.h */; };
 		B7E6AF101FB8C08D00A8ADFB /* WBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AEFD1FB8C08D00A8ADFB /* WBWindow.m */; };
-		B7E6AF111FB8C08D00A8ADFB /* WBGPSPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7E6AEFF1FB8C08D00A8ADFB /* WBGPSPickerViewController.h */; };
-		B7E6AF121FB8C08D00A8ADFB /* WBGPSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E6AF001FB8C08D00A8ADFB /* WBGPSPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D3A606BCEAE9526D10A9080 /* Pods-ddXHQDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ddXHQDylib.release.xcconfig"; path = "Pods/Target Support Files/Pods-ddXHQDylib/Pods-ddXHQDylib.release.xcconfig"; sourceTree = "<group>"; };
+		7E66C02F9BC236D19E839201 /* Pods-ddXHQDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ddXHQDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ddXHQDylib/Pods-ddXHQDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		B76429151FC5146500E3B5E8 /* DingtalkPluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DingtalkPluginConfig.h; sourceTree = "<group>"; };
+		B76429161FC5146600E3B5E8 /* DingtalkPluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DingtalkPluginConfig.m; sourceTree = "<group>"; };
+		B76429171FC5146600E3B5E8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B76429181FC5146600E3B5E8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B76429191FC5146600E3B5E8 /* WBGPSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGPSPickerViewController.h; sourceTree = "<group>"; };
+		B764291A1FC5146600E3B5E8 /* WBGPSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGPSPickerViewController.m; sourceTree = "<group>"; };
 		B7BBF1F31FB5A12B00DA3D0E /* ddXHQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddXHQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BBF1F61FB5A12B00DA3D0E /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
 		B7BBF1F91FB5A12B00DA3D0E /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
@@ -105,8 +118,7 @@
 		B7E6AEFB1FB8C08D00A8ADFB /* WBMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMenuViewController.m; sourceTree = "<group>"; };
 		B7E6AEFC1FB8C08D00A8ADFB /* WBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWindow.h; sourceTree = "<group>"; };
 		B7E6AEFD1FB8C08D00A8ADFB /* WBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWindow.m; sourceTree = "<group>"; };
-		B7E6AEFF1FB8C08D00A8ADFB /* WBGPSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGPSPickerViewController.h; sourceTree = "<group>"; };
-		B7E6AF001FB8C08D00A8ADFB /* WBGPSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGPSPickerViewController.m; sourceTree = "<group>"; };
+		FC9CEDBFA6859E1BD7F15851 /* Pods_ddXHQDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ddXHQDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +138,22 @@
 				B7BBF2041FB5A12B00DA3D0E /* Cycript.framework in Frameworks */,
 				B7BBF20A1FB5A12B00DA3D0E /* Foundation.framework in Frameworks */,
 				B7BBF20C1FB5A12B00DA3D0E /* UIKit.framework in Frameworks */,
+				356567F9C6C48AD477B9CEB5 /* Pods_ddXHQDylib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F29E1BF06AA0B193BE044C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E66C02F9BC236D19E839201 /* Pods-ddXHQDylib.debug.xcconfig */,
+				3D3A606BCEAE9526D10A9080 /* Pods-ddXHQDylib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B7BBF1E71FB5A12B00DA3D0E = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +161,7 @@
 				B7BBF20D1FB5A12B00DA3D0E /* ddXHQDylib */,
 				B7BBF2021FB5A12B00DA3D0E /* Frameworks */,
 				B7BBF1F41FB5A12B00DA3D0E /* Products */,
+				0F29E1BF06AA0B193BE044C3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +200,7 @@
 				B7BBF2071FB5A12B00DA3D0E /* RevealServer.framework */,
 				B7BBF2091FB5A12B00DA3D0E /* Foundation.framework */,
 				B7BBF20B1FB5A12B00DA3D0E /* UIKit.framework */,
+				FC9CEDBFA6859E1BD7F15851 /* Pods_ddXHQDylib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,8 +292,12 @@
 		B7E6AEFE1FB8C08D00A8ADFB /* GPS */ = {
 			isa = PBXGroup;
 			children = (
-				B7E6AEFF1FB8C08D00A8ADFB /* WBGPSPickerViewController.h */,
-				B7E6AF001FB8C08D00A8ADFB /* WBGPSPickerViewController.m */,
+				B76429151FC5146500E3B5E8 /* DingtalkPluginConfig.h */,
+				B76429161FC5146600E3B5E8 /* DingtalkPluginConfig.m */,
+				B76429171FC5146600E3B5E8 /* MapViewController.h */,
+				B76429181FC5146600E3B5E8 /* MapViewController.m */,
+				B76429191FC5146600E3B5E8 /* WBGPSPickerViewController.h */,
+				B764291A1FC5146600E3B5E8 /* WBGPSPickerViewController.m */,
 			);
 			path = GPS;
 			sourceTree = "<group>";
@@ -284,15 +312,17 @@
 				B7E6AF071FB8C08D00A8ADFB /* WBAssistantManager.h in Headers */,
 				B7E6AF0B1FB8C08D00A8ADFB /* WBMenuView.h in Headers */,
 				B7E6AF051FB8C08D00A8ADFB /* WBWifiStore.h in Headers */,
+				B764291B1FC5146600E3B5E8 /* DingtalkPluginConfig.h in Headers */,
 				B7E6AF011FB8C08D00A8ADFB /* WBWifiListViewController.h in Headers */,
 				B7BBF2101FB5A12B00DA3D0E /* ANYMethodLog.h in Headers */,
 				B7E6AF091FB8C08D00A8ADFB /* WBGlobalSettingViewController.h in Headers */,
 				B7BBF2141FB5A12B00DA3D0E /* MethodTrace.h in Headers */,
+				B764291F1FC5146600E3B5E8 /* WBGPSPickerViewController.h in Headers */,
 				B7BBF2201FB5A12B00DA3D0E /* fishhook.h in Headers */,
 				B7E6AF031FB8C08D00A8ADFB /* WBWifiModel.h in Headers */,
 				B7E6AF0F1FB8C08D00A8ADFB /* WBWindow.h in Headers */,
 				B7E6AF0D1FB8C08D00A8ADFB /* WBMenuViewController.h in Headers */,
-				B7E6AF111FB8C08D00A8ADFB /* WBGPSPickerViewController.h in Headers */,
+				B764291D1FC5146600E3B5E8 /* MapViewController.h in Headers */,
 				B7BBF2251FB5A12B00DA3D0E /* ddXHQDylib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,10 +355,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7BBF22D1FB5A12B00DA3D0E /* Build configuration list for PBXNativeTarget "ddXHQDylib" */;
 			buildPhases = (
+				0A8737B5131D0AC669BADB34 /* [CP] Check Pods Manifest.lock */,
 				B7BBF1FC1FB5A12B00DA3D0E /* ShellScript */,
 				B7BBF1FD1FB5A12B00DA3D0E /* Sources */,
 				B7BBF1FE1FB5A12B00DA3D0E /* Frameworks */,
 				B7BBF1FF1FB5A12B00DA3D0E /* Headers */,
+				72FE624EEA7D2F9BD9EB518B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,6 +423,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A8737B5131D0AC669BADB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ddXHQDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72FE624EEA7D2F9BD9EB518B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ddXHQDylib/Pods-ddXHQDylib-resources.sh",
+				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ddXHQDylib/Pods-ddXHQDylib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B7BBF1EE1FB5A12B00DA3D0E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E6AF0E1FB8C08D00A8ADFB /* WBMenuViewController.m in Sources */,
+				B76429201FC5146600E3B5E8 /* WBGPSPickerViewController.m in Sources */,
 				B7BBF2231FB5A12B00DA3D0E /* ddXHQDylib.mm in Sources */,
 				B7E6AF041FB8C08D00A8ADFB /* WBWifiModel.m in Sources */,
 				B7BBF21B1FB5A12B00DA3D0E /* AntiAntiDebug.m in Sources */,
@@ -452,9 +521,10 @@
 				B7BBF2271FB5A12B00DA3D0E /* ddXHQDylib.m in Sources */,
 				B7E6AF021FB8C08D00A8ADFB /* WBWifiListViewController.m in Sources */,
 				B7BBF2161FB5A12B00DA3D0E /* MethodTrace.m in Sources */,
-				B7E6AF121FB8C08D00A8ADFB /* WBGPSPickerViewController.m in Sources */,
 				B7E6AF0A1FB8C08D00A8ADFB /* WBGlobalSettingViewController.m in Sources */,
 				B7E6AF0C1FB8C08D00A8ADFB /* WBMenuView.m in Sources */,
+				B764291C1FC5146600E3B5E8 /* DingtalkPluginConfig.m in Sources */,
+				B764291E1FC5146600E3B5E8 /* MapViewController.m in Sources */,
 				B7BBF21E1FB5A12B00DA3D0E /* fishhook.c in Sources */,
 				B7E6AF061FB8C08D00A8ADFB /* WBWifiStore.m in Sources */,
 				B7E6AF101FB8C08D00A8ADFB /* WBWindow.m in Sources */,
@@ -607,6 +677,7 @@
 		};
 		B7BBF22E1FB5A12B00DA3D0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E66C02F9BC236D19E839201 /* Pods-ddXHQDylib.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = SVJ9FQTG9N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -659,6 +730,7 @@
 		};
 		B7BBF22F1FB5A12B00DA3D0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3A606BCEAE9526D10A9080 /* Pods-ddXHQDylib.release.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = SVJ9FQTG9N;
