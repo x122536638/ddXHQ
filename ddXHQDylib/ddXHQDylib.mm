@@ -1,4 +1,4 @@
-#line 1 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/ddXHQ/ddXHQDylib/ddXHQDylib.xm"
+#line 1 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/支持wifi的钉钉/ddXHQDylib/ddXHQDylib.xm"
 #import "MenuWindow/WBAssistantManager.h"
 #import "WIFI/WBWifiStore.h"
 #import "WIFI/WBWifiModel.h"
@@ -28,7 +28,7 @@
 @class DTAppDelegate; 
 static void (*_logos_orig$_ungrouped$DTAppDelegate$applicationDidBecomeActive$)(_LOGOS_SELF_TYPE_NORMAL DTAppDelegate* _LOGOS_SELF_CONST, SEL, id); static void _logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(_LOGOS_SELF_TYPE_NORMAL DTAppDelegate* _LOGOS_SELF_CONST, SEL, id); 
 
-#line 6 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/ddXHQ/ddXHQDylib/ddXHQDylib.xm"
+#line 6 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/支持wifi的钉钉/ddXHQDylib/ddXHQDylib.xm"
  
 
 static void _logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(_LOGOS_SELF_TYPE_NORMAL DTAppDelegate* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1) {
@@ -108,4 +108,4 @@ static void _logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(_
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$DTAppDelegate = objc_getClass("DTAppDelegate"); MSHookMessageEx(_logos_class$_ungrouped$DTAppDelegate, @selector(applicationDidBecomeActive:), (IMP)&_logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$, (IMP*)&_logos_orig$_ungrouped$DTAppDelegate$applicationDidBecomeActive$);} }
-#line 83 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/ddXHQ/ddXHQDylib/ddXHQDylib.xm"
+#line 83 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/支持wifi的钉钉/ddXHQDylib/ddXHQDylib.xm"
