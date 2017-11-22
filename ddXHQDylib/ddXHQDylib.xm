@@ -3,7 +3,7 @@
 #import "WIFI/WBWifiModel.h"
 #import <SystemConfiguration/CaptiveNetwork.h>
 
-%hook DTAppDelegate 
+%hook AppDelegate 
 
 - (void)applicationDidBecomeActive:(id)arg1 {
 	%orig;

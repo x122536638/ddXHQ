@@ -18,7 +18,6 @@
 		B7BBF1FA1FB5A12B00DA3D0E /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = B7BBF1F91FB5A12B00DA3D0E /* put ipa or app here */; };
 		B7BBF2041FB5A12B00DA3D0E /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2031FB5A12B00DA3D0E /* Cycript.framework */; };
 		B7BBF2061FB5A12B00DA3D0E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2051FB5A12B00DA3D0E /* JavaScriptCore.framework */; };
-		B7BBF2081FB5A12B00DA3D0E /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2071FB5A12B00DA3D0E /* RevealServer.framework */; };
 		B7BBF20A1FB5A12B00DA3D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF2091FB5A12B00DA3D0E /* Foundation.framework */; };
 		B7BBF20C1FB5A12B00DA3D0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BBF20B1FB5A12B00DA3D0E /* UIKit.framework */; };
 		B7BBF2101FB5A12B00DA3D0E /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BBF20F1FB5A12B00DA3D0E /* ANYMethodLog.h */; };
@@ -134,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7BBF2061FB5A12B00DA3D0E /* JavaScriptCore.framework in Frameworks */,
-				B7BBF2081FB5A12B00DA3D0E /* RevealServer.framework in Frameworks */,
 				B7BBF2041FB5A12B00DA3D0E /* Cycript.framework in Frameworks */,
 				B7BBF20A1FB5A12B00DA3D0E /* Foundation.framework in Frameworks */,
 				B7BBF20C1FB5A12B00DA3D0E /* UIKit.framework in Frameworks */,
@@ -647,7 +645,7 @@
 				MONKEYDEV_RESTORE_SYMBOL = NO;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ww;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "92c9c1cf-35f9-4125-a907-dcbd23b452e7";
 				PROVISIONING_PROFILE_SPECIFIER = 20170811_2_TP;
@@ -668,7 +666,7 @@
 				MONKEYDEV_RESTORE_SYMBOL = NO;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.ww;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "36bbe5b6-b886-4be8-a15c-060fdf65cf5a";
 				PROVISIONING_PROFILE_SPECIFIER = 20170811_2_TP;

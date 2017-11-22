@@ -52,7 +52,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [_mapView addAnnotation:self.pointAnnotation];
+    [_mapView addAnnotation:self.pointAnnotation];//
     if (pluginConfig.location.longitude) {
         self.pointAnnotation.coordinate = pluginConfig.location;
     }else{

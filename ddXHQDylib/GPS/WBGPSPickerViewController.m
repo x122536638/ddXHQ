@@ -40,8 +40,8 @@
     NSNumber *numberLAT = [[NSUserDefaults standardUserDefaults]  objectForKey:@"lat_xhq"];
     NSNumber *numberLON    = [[NSUserDefaults standardUserDefaults]  objectForKey:@"lon_xhq"];
     if ([numberLAT doubleValue] || [numberLON doubleValue]) {
-        _lonTF.placeholder = [NSString stringWithFormat:@"%lf",[numberLON doubleValue]];
-         _latTF.placeholder = [NSString stringWithFormat:@"%lf",[numberLAT doubleValue]];
+        _lonTF.text = [NSString stringWithFormat:@"%lf",[numberLON doubleValue]];
+         _latTF.text = [NSString stringWithFormat:@"%lf",[numberLAT doubleValue]];
     }else{
         
     }

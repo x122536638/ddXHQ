@@ -1,4 +1,4 @@
-#line 1 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/支持wifi的钉钉/ddXHQDylib/ddXHQDylib.xm"
+#line 1 "/Users/xhq/Documents/支持wifi和gps的微信/ddXHQDylib/ddXHQDylib.xm"
 #import "MenuWindow/WBAssistantManager.h"
 #import "WIFI/WBWifiStore.h"
 #import "WIFI/WBWifiModel.h"
@@ -25,14 +25,14 @@
 #define _LOGOS_RETURN_RETAINED
 #endif
 
-@class DTAppDelegate; 
-static void (*_logos_orig$_ungrouped$DTAppDelegate$applicationDidBecomeActive$)(_LOGOS_SELF_TYPE_NORMAL DTAppDelegate* _LOGOS_SELF_CONST, SEL, id); static void _logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(_LOGOS_SELF_TYPE_NORMAL DTAppDelegate* _LOGOS_SELF_CONST, SEL, id); 
+@class AppDelegate; 
+static void (*_logos_orig$_ungrouped$AppDelegate$applicationDidBecomeActive$)(_LOGOS_SELF_TYPE_NORMAL AppDelegate* _LOGOS_SELF_CONST, SEL, id); static void _logos_method$_ungrouped$AppDelegate$applicationDidBecomeActive$(_LOGOS_SELF_TYPE_NORMAL AppDelegate* _LOGOS_SELF_CONST, SEL, id); 
 
-#line 6 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/支持wifi的钉钉/ddXHQDylib/ddXHQDylib.xm"
+#line 6 "/Users/xhq/Documents/支持wifi和gps的微信/ddXHQDylib/ddXHQDylib.xm"
  
 
-static void _logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(_LOGOS_SELF_TYPE_NORMAL DTAppDelegate* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1) {
-	_logos_orig$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(self, _cmd, arg1);
+static void _logos_method$_ungrouped$AppDelegate$applicationDidBecomeActive$(_LOGOS_SELF_TYPE_NORMAL AppDelegate* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1) {
+	_logos_orig$_ungrouped$AppDelegate$applicationDidBecomeActive$(self, _cmd, arg1);
 
 	[[WBAssistantManager sharedManager] showMenu];
 }
@@ -107,5 +107,5 @@ static void _logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$(_
 
 
 static __attribute__((constructor)) void _logosLocalInit() {
-{Class _logos_class$_ungrouped$DTAppDelegate = objc_getClass("DTAppDelegate"); MSHookMessageEx(_logos_class$_ungrouped$DTAppDelegate, @selector(applicationDidBecomeActive:), (IMP)&_logos_method$_ungrouped$DTAppDelegate$applicationDidBecomeActive$, (IMP*)&_logos_orig$_ungrouped$DTAppDelegate$applicationDidBecomeActive$);} }
-#line 83 "/Users/xhq/Desktop/fanbianyi/10_31/11_09/支持wifi的钉钉/ddXHQDylib/ddXHQDylib.xm"
+{Class _logos_class$_ungrouped$AppDelegate = objc_getClass("AppDelegate"); MSHookMessageEx(_logos_class$_ungrouped$AppDelegate, @selector(applicationDidBecomeActive:), (IMP)&_logos_method$_ungrouped$AppDelegate$applicationDidBecomeActive$, (IMP*)&_logos_orig$_ungrouped$AppDelegate$applicationDidBecomeActive$);} }
+#line 83 "/Users/xhq/Documents/支持wifi和gps的微信/ddXHQDylib/ddXHQDylib.xm"
