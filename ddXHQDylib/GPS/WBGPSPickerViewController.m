@@ -59,6 +59,9 @@
         
     }];
     [alerVC addAction:okAction];
+    
+//    pluginConfig.location
+//    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@""];
     [self presentViewController:alerVC animated:NO completion:nil];
 }
 -(void)pushToMapVC:(UIButton *)sender{
